@@ -15,3 +15,5 @@ Then create an array of `voteOption` objects for each thing that should be voted
 The `name_string` is only for identification purposes in console output and has no effect on the functioning of the program.
 `times_to_vote` can be used to setup a ratio between different voting options and will simply vote for the specific choice the specified number of times before moving to the next.
 
+Highly recommend using this with AWS scaling groups or similar solution to increase votes/second. This bot only works on polls that allow voting multiple times, but will still be locked out after a number of attempts for some interval.
+
